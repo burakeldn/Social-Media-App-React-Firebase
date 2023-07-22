@@ -1,0 +1,213 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.first-base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-field {
+  width: 300px; 
+  height: 40px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center; 
+}
+
+.password-toggle {
+  color: #777;
+  cursor: pointer;
+  margin-left: 5px; 
+}
+
+.input-text,
+.input-password,
+.input-email {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+  flex: 1; 
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus {
+  outline: none;
+  border-color: #85a7ff;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.input-field::placeholder {
+  font-size: 14px;
+}
+
+.signup-text {
+  color: #333;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.signup-link {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+.sign-up-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-up-button:hover {
+  background-color: #0056b3;
+}
+
+.sign-up-button:active {
+  background-color: #007bff;
+}
+
+.sign-up-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+:root {
+  --post-bg-color: #f5f5f5;
+  --post-header-bg-color: #333; 
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post {
+  background-color: var(--post-bg-color);
+  width: 400px;
+  border: 1px solid #ccc;
+  padding:2px 10px;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--post-header-bg-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px 8px 0 0;
+}
+
+.post-body {
+  font-size: 16px;
+  margin-top: 10px;
+  max-height: 200px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.post-date {
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+div {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.addpost-posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
