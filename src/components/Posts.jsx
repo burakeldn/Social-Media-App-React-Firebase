@@ -24,7 +24,7 @@ export default function Posts() {
     if (isLoading) {
         return <div>
             <h1>Loading..</h1>
-        </div>
+        </div>;
     }
 
     return (

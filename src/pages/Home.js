@@ -3,6 +3,7 @@ import Login from '../components/Login';
 import { auth } from '../firebase';
 import Posts from '../components/Posts'
 import AddPost from '../components/AddPost';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
   const [user, setUser] = useState(null);
@@ -21,8 +22,14 @@ function Home() {
     };
   }, []);
 
+  const history = useNavigate();
+
   const handleSignOut = () => {
     auth.signOut();
+  };
+
+  const handleGoToProfile = () => {
+    history('/profile');
   };
 
   return (
@@ -31,6 +38,7 @@ function Home() {
         <div>
           <p>Welcome, {user.displayName}</p>
           <button onClick={handleSignOut}>Sign Out</button>
+          <button onClick={handleGoToProfile}>Go to Profile</button>
           <AddPost/>
           <Posts/>
         </div>
